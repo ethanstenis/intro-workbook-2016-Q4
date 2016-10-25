@@ -3,8 +3,8 @@ body {
 }
 
 header, main, footer {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 header {
@@ -33,21 +33,21 @@ main aside h3 {
     font-weight: 200;
 }
 
+aside {
+  background-color: lightgray;
+  padding: 10px;
+}
+
 main p {
     font-size: 16px;
     color: #555;
 }
 
 body html {
-    background-color: #f3f3f3;
+    background-color: #fff;
     padding: 15px;
 }
 
 .my-footer {
     padding: 15px;
-}
-
-aside {
-  background-color: lightgray;
-  padding: 10px;
 }

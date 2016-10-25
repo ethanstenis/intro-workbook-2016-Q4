@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Arial', sans-serif;
 }
@@ -28,7 +29,7 @@ main h2 {
   font-weight: 200;
 }
 
-main aside h3 {
+main aside h2 {
   font-size: 24px;
   font-weight: 200;
 }
@@ -38,16 +39,11 @@ main p {
   color: #555;
 }
 
-body html {
+body aside {
   background-color: #f3f3f3;
   padding: 15px;
 }
 
 .my-footer {
   padding: 15px;
-}
-
-aside {
-  background-color: lightgray;
-  padding: 10px;
 }
