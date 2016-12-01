@@ -1,0 +1,124 @@
+body {
+  margin-bottom: 30px;
+}
+
+.patient {
+  background-image: url('http://inspirythemes.biz/html-templates/cream/images/temp-images/hoodie_1_back-470x470.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid lightgray;
+}
+
+.happy {
+  background-image: url('http://inspirythemes.biz/html-templates/cream/images/temp-images/hoodie_1_front.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid lightgray;
+}
+
+.ship-idea {
+  background-image: url('http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_1_up-300x300.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid lightgray;
+}
+
+.flying {
+  background-image: url('http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_2_up-300x300.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid lightgray;
+}
+
+
+.price {
+  background-color: #66d9c1;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 131px;
+  right: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.sale {
+  background-color: red;
+  padding: 5px 10px;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  margin: 40px;
+  font-family: 'Lily Script One', cursive;
+}
+
+h4 {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h4 a {
+  text-decoration: none;
+  color: #606261;
+}
+
+h4 a:hover {
+  text-decoration: none;
+  color: #66d9c1;
+  cursor: pointer;
+}
+
+.dropbox {
+  text-align: center;
+  padding: 30px 0px;
+  border: 1px solid lightgray;
+}
+
+.dropbox a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3A4543;
+  padding: 10px 15px;
+}
+
+.dropbox a:hover {
+  background-color: #66d9c1;;
+}
+
+/* The following CSS is for tablet */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .ship-idea, .flying {
+    margin-top: 30px;
+  }
+
+}
+
+/* The following CSS is for phone */
+
+@media (max-width: 767px) {
+
+  .happy, .ship-idea, .flying {
+    margin-top: 30px;
+  }
+
+}
