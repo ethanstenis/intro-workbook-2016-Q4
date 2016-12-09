@@ -1,0 +1,34 @@
+.logo {
+  color: red;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(14, 232, 192, 0.5);
+}
+
+nav li {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#hero {
+  background-image: url('../img/beer-hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  position: relative;
+  background-blend-mode: multiply;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#hero h1, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-size: 90px;
+  text-shadow: 3px 3px 3px black;
+}

@@ -10,26 +10,46 @@
 </head>
 <body>
   <main>
-    <section id="hero" class="jumbotron">
+
+    <!-- This is the main header section with hero image -->
+<header>
+    <section class="jumbotron">
+      <div id="creatives" class="container-fluid">
       <div class="row">
         <h1>We're creatives</h1>
       </div>
+    </div>
     </section>
-    <article id="photos" class="container-fluid hidden-xs">
+</header>
+<!-- This is the section with images that becomes hidden in phone size -->
+<section id="photos" class="container-fluid hidden-xs">
+  <!-- Main Row -->
+  <div class="row">
+    <div class="col-sm-8">
+      <!-- 1st Nested Row -->
       <div class="row">
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-sm-6"><img class="img-responsive" src="http://bone.themanoid.com/images/thumbs/07.png" alt="Mountains"></div>
-            <div class="col-sm-6"><img class="img-responsive" src="http://bone.themanoid.com/images/thumbs/02.png" alt="Keyboard"></div>
-          </div>
-          <div class="row row2">
-            <div class="col-sm-6"><img class="img-responsive" src="http://bone.themanoid.com/images/thumbs/04.png" alt="Mountain Range"></div>
-            <div class="col-sm-6"><img class="img-responsive" src="http://bone.themanoid.com/images/thumbs/05.png" alt="Abstract Building"></div>
-          </div>
+        <div class="col-sm-6">
+          <img src="img/creatives-mountains.png" class="img-responsive box" />
         </div>
-        <div class="col-sm-4"><img class="img-responsive" src="http://bone.themanoid.com/images/thumbs/03.png" alt="Man buttoning suit"></div>
+        <div class="col-sm-6">
+          <img src="img/creatives-peaks.png" class="img-responsive box" />
+        </div>
       </div>
-    </article>
+      <!-- 2nd Nested Row -->
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="img/creatives-keyboard.png" class="img-responsive box" />
+        </div>
+        <div class="col-sm-6">
+          <img src="img/creatives-buildings.png" class="img-responsive box"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"><img src="img/creatives-suit.png" class="img-responsive side"/></div>
+  </div>
+</section>
+
+<!-- The Pricing Section - Only Visible in Phone View -->
     <aside class="visible-xs">
       <div class="container-fluid">
         <div class="row">

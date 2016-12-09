@@ -1,37 +1,47 @@
 body {
-  font-family: Helvetica, arail, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .jumbotron {
-  background-image: url("http://bone.themanoid.com/images/office/03.jpg");
-  /*position: absolute;*/
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  background-image: url("../img/bg-office.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
-  height: 525px;
+  height: 600px;
 }
 
-#hero h1 {
+#creatives h1 {
   margin: 0 auto;
   margin-top: 115px;
   font-size: 60px;
   max-width: 80%;
-
 }
 
-article {
+h1, h2, h3, h4 {
+  font-family: Helvetica,sans-serif;
+}
+
+#photos {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  margin-bottom: 5%;
+  height: 290px;
   width: 100%;
 }
 
-#photos img {
-  margin-bottom: 12.5%;
+.side {
+  height: 600px;
+  width: 100%;
 }
+
+/* CSS Below is for Aside and Phone View */
 
 aside {
   background-color: #f0f0f0;
@@ -46,7 +56,7 @@ aside h2 {
 
 aside h3 {
   font-size: 24px;
-  margin: 50px 0;
+  margin: 40px 0;
   padding-top: 30px;
 }
 
@@ -54,10 +64,6 @@ aside h4 {
   font-size: 32px;
   font-weight: 100;
   margin-bottom: 50px;
-}
-
-aside ul {
-  list-style: none;
 }
 
 .silver {
@@ -80,7 +86,7 @@ aside .row:first-of-type {
 }
 
 .features p:nth-child(1n+6) {
-  color: #ccc;
+  color: grey;
   font-weight: 100;
 }
 
@@ -88,13 +94,19 @@ aside .row:first-of-type {
   background-color: #2E2E2E;
   color: #fff;
   padding: 10px 15px;
-  border-radius: 0;
+  border-radius: 5;
   margin-bottom: 35px;
   margin-top: 15px;
 }
 
+.btn:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid gray;
+}
+
 @media (max-width: 767px){
-  body{
+  body {
     width: 100%;
   }
 }
