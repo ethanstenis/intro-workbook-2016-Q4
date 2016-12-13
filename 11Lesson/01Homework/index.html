@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Lesson 11 | Bootstrap Navigation + Image Carousel</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
+  <header id="hero">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><div><img src="img/cubs-logo.gif" class="logo img-responsive"/></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-right navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+<h1>My Favorite Cubs Players</h1>
+    </div>
+  </div>
+
+    <!-- <div class="col-xs-12">
+      <div class="owl-carousel">
+  <div><img src="img/ryne-sandberg.jpg" /></div>
+  <div><img src="img/Ernie-Banks-1969.jpg"/></div>
+  <div><img src="img/Fergie-Jenkins-1970.jpg"/></div>
+  <div><img src=""/></div>
+  <div><img src=""/></div>
+  <div><img src=""/></div>
+  <div><img src=""/></div>
+</div>
+    </div> -->
+
+    <div class="owl-carousel">
+    <div class="item img1"><h4>Ryne Sandberg</h4></div>
+    <div class="item img2"><h4>Ernie Banks</h4></div>
+    <div class="item img3"><h4>Kris Bryant</h4></div>
+    <div class="item img4"><h4>Anthony Rizzo</h4></div>
+    <div class="item img5"><h4>Greg Maddux</h4></div>
+    <div class="item img6"><h4>Fergie Jenkins</h4></div>
+    <div class="item img7"><h4>Andre Dawson</h4></div>
+    <div class="item img8"><h4>Kyle Schwarber</h4></div>
+    <div class="item img9"><h4>Ron Santo</h4></div>
+    <div class="item img10"><h4>Kerry Wood</h4></div>
+    <div class="item img11"><h4>Billy Williams</h4></div>
+    <div class="item img12"><h4>Mark Grace</h4></div>
+
+</div>
+
+</main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+</script>
 
 </body>
 </html>
