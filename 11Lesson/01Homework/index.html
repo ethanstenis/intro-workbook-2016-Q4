@@ -3,11 +3,27 @@
 <head>
   <title>Lesson 11 | Bootstrap Navigation + Image Carousel</title>
 
+  <!-- This is the meta tag for Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- My CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Owl Carousel Custom CSS -->
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Animate.CSS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
 </head>
 <body>
   <header id="hero">
@@ -36,27 +52,17 @@
   </div>
 </nav>
 </header>
+
+
 <main>
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12">
-<h1>My Favorite Cubs Players</h1>
+      <h1 class="animated tada">My Favorite Cubs Players</h1>
     </div>
   </div>
 
-    <!-- <div class="col-xs-12">
-      <div class="owl-carousel">
-  <div><img src="img/ryne-sandberg.jpg" /></div>
-  <div><img src="img/Ernie-Banks-1969.jpg"/></div>
-  <div><img src="img/Fergie-Jenkins-1970.jpg"/></div>
-  <div><img src=""/></div>
-  <div><img src=""/></div>
-  <div><img src=""/></div>
-  <div><img src=""/></div>
-</div>
-    </div> -->
-
-    <div class="owl-carousel">
+  <div class="owl-carousel">
     <div class="item img1"><h4>Ryne Sandberg</h4></div>
     <div class="item img2"><h4>Ernie Banks</h4></div>
     <div class="item img3"><h4>Kris Bryant</h4></div>
@@ -69,14 +75,22 @@
     <div class="item img10"><h4>Kerry Wood</h4></div>
     <div class="item img11"><h4>Billy Williams</h4></div>
     <div class="item img12"><h4>Mark Grace</h4></div>
-
-</div>
+  </div>
 
 </main>
 
+<!-- jQuery script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap script -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Carousel Custom script -->
+
   <script src="js/owl.carousel.min.js"></script>
+
+  <!-- Carousel Behavior Call -->
+
   <script>
   $('.owl-carousel').owlCarousel({
       loop:true,
@@ -86,14 +100,24 @@
           0:{
               items:1
           },
-          600:{
+          768:{
               items:3
           },
-          1000:{
+          992:{
               items:5
           }
       }
   })
+</script>
+
+<script>
+$('.animated').click(function() {
+  var heading =  $(this)
+  heading.removeClass('tada');
+  setTimeout(function() {
+    heading.addClass('tada');
+  }, 5000);
+});
 </script>
 
 </body>
